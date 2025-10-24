@@ -1,0 +1,103 @@
+:root {
+    /* Brand colors */
+    --clr-primary: hsl(47, 88%, 63%);
+    
+    /* Backgrounds */
+    --clr-bg-main: var(--clr-primary);
+    --clr-bg-card: hsl(0, 0%, 100%);
+
+    /* Neutrals */
+    --clr-neutral-500: hsl(0, 0%, 42%);
+    --clr-neutral-950: hsl(0, 0%, 7%);
+}
+
+body {
+    background-color: var(--clr-primary);
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.card {
+    background-color: var(--clr-bg-card);
+    max-width: 300px;
+    padding: 20px;
+    margin: 150px auto 0;
+    border-radius: 15px;
+    border: 1px solid var(--clr-neutral-950);
+    box-shadow: 5px 5px var(--clr-neutral-950);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.tags {
+    margin-top: 15px;
+}
+
+.tags a {
+    text-decoration: none;
+}
+
+.tag {
+    padding: 5px 10px;
+    color: var(--clr-neutral-950);
+    border-radius: 3px;
+    margin: 0;
+    font-size: .8rem;
+    font-weight: 600;
+    background-color: var(--clr-primary);
+    display: inline;
+    
+}
+
+.date {
+    margin-top: 15px;
+    font-size: .8rem;
+}
+
+.card h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.card h1:hover {
+    color: var(--clr-primary);
+}
+
+.card p {
+    color: var(--clr-neutral-500);
+    font-size: .9rem;
+}
+
+.author {
+    margin-top: 25px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    width: 25px;
+    height: auto;
+}
+
+.a-name {
+    display: inline;
+    margin-left: 10px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
