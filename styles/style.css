@@ -9,12 +9,14 @@
     /* Neutrals */
     --clr-neutral-500: hsl(0, 0%, 42%);
     --clr-neutral-950: hsl(0, 0%, 7%);
+
+
+    font-size: 16px;
 }
 
 body {
     background-color: var(--clr-primary);
-    font-size: 16px;
-    font-family: "Outfit", sans-serif;
+    font-family: "Figtree", sans-serif;
     display: flex;
     flex-direction: column;
     max-height: 100vh;
@@ -22,21 +24,21 @@ body {
 
 .card {
     background-color: var(--clr-bg-card);
-    max-width: 300px;
-    padding: 20px;
-    margin: 150px auto 0;
-    border-radius: 15px;
+    max-width: 327px;
+    padding: 22px;
+    margin: 205px auto 0;
+    border-radius: 20px;
     border: 1px solid var(--clr-neutral-950);
-    box-shadow: 5px 5px var(--clr-neutral-950);
+    box-shadow: 8px 8px var(--clr-neutral-950);
 }
 
 .card img {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .tags {
-    margin-top: 15px;
+    margin-top: 22px;
 }
 
 .tags a {
@@ -44,25 +46,26 @@ body {
 }
 
 .tag {
-    padding: 5px 10px;
+    padding: 6px 12px;
     color: var(--clr-neutral-950);
-    border-radius: 3px;
+    border-radius: 4px;
     margin: 0;
-    font-size: .8rem;
-    font-weight: 600;
+    font-size: .85rem;
+    font-weight: 800;
     background-color: var(--clr-primary);
     display: inline;
     
 }
 
 .date {
-    margin-top: 15px;
-    font-size: .8rem;
+    margin-top: 19px;
+    font-size: .85rem;
 }
 
 .card h1 {
-    font-size: 1.4rem;
-    font-weight: 600;
+    margin-top: 18px;
+    font-size: 1.45rem;
+    font-weight: 800;
 }
 
 .card h1:hover {
@@ -71,26 +74,28 @@ body {
 
 .card p {
     color: var(--clr-neutral-500);
-    font-size: .9rem;
+    font-size: 1rem;
+    margin-top: 16px;
+    line-height: 1.45rem;
 }
 
 .author {
-    margin-top: 25px;
+    margin-top: 23px;
     padding: 0;
     display: flex;
     align-items: center;
 }
 
 .author img {
-    width: 25px;
+    width: 31px;
     height: auto;
 }
 
 .a-name {
     display: inline;
-    margin-left: 10px;
-    font-size: .8rem;
-    font-weight: 600;
+    margin-left: 12px;
+    font-size: .85em;
+    font-weight: 800;
 }
 
 .attribution {
@@ -100,4 +105,18 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 430px) {
+    .card {
+        margin-top: 25%;
+        max-width: 80%;
+
+    }
+
+    .card > img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 }
