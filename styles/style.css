@@ -25,6 +25,11 @@ body {
     margin: 0;
 }
 
+a:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--clr-neutral-950);
+}
+
 .card {
     background-color: var(--clr-bg-card);
     max-width: 310px;
@@ -66,17 +71,23 @@ body {
     font-size: clamp(.6rem, 3.2vw, .85rem);
 }
 
-.card h1 {
+.article-link {
+    display: block;
+    text-decoration: none;
+}
+
+.article-link h1 {
     margin-top: 18px;
     font-size: clamp(1rem, 5.4vw, 1.45rem);
     font-weight: 800;
+    color: var(--clr-neutral-950);
 }
 
-.card h1:hover {
+.article-link h1:hover {
     color: var(--clr-primary);
 }
 
-.card p {
+.article-link p {
     color: var(--clr-neutral-500);
     font-size: clamp(.7rem, 3.7vw, 1rem);
     margin-top: 16px;
@@ -115,7 +126,7 @@ body {
 @media (max-width: 430px) {
     .card {
         margin-top: 25%;
-        max-width: 80%;
+        max-width: 75%;
 
     }
 
