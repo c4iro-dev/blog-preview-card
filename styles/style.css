@@ -32,10 +32,10 @@ a:focus-visible {
 
 .card {
     background-color: var(--clr-bg-card);
-    max-width: 310px;
+    max-width: 330px;
     min-width: 227px;
     padding: 22px;
-    margin: 0 auto;
+    margin: 10px auto 0;
     border-radius: 20px;
     border: 1px solid var(--clr-neutral-950);
     box-shadow: 8px 8px var(--clr-neutral-950);
